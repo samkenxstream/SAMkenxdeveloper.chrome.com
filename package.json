@@ -56,7 +56,7 @@
     "algoliasearch": "^4.6.0",
     "async-transforms": "1.0.6",
     "cheerio": "1.0.0-rc.3",
-    "chokidar": "^3.5.1",
+    "chokidar": "^3.5.3",
     "chokidar-cli": "^2.1.0",
     "common-tags": "^1.8.0",
     "compression": "^1.7.4",
