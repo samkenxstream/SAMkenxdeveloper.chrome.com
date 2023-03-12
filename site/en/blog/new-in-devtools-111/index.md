@@ -4,15 +4,14 @@ title: "What's New in DevTools (Chrome 111)"
 authors:
   - jecelynyeen
 date: 2023-02-16
-description: ""
-hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/KwNETHFT5o1aAv74huRF.jpg'
+description: "Debugging HD color, enhanced breakpoint UX, and more."
+hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/GZr06vqTxoJGEIXVqXT9.png'
 alt: 'Debugging HD color, enhanced breakpoint UX, and more'
 tags:
   - new-in-devtools
   - devtools
   - chrome-111
 ---
-<!-- image/dPDCek3EhZgLQPGtEG3y0fTn4v82/GZr06vqTxoJGEIXVqXT9.png  -->
 
 {% Partial 'devtools/banner.md' %}
 

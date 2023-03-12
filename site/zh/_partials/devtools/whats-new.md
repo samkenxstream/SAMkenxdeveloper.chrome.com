@@ -4,29 +4,45 @@
 
 {# $content #}
 
-{# ### Chrome 111 {: #chrome111 }
+{# ### Chrome 112 {: #chrome112 }
 
-* [Debugging HD color with the Styles pane](/zh/blog/new-in-devtools-111/#color)
-* [Enhanced breakpoint UX](/zh/blog/new-in-devtools-111/#breakpoint-redesign)
-* [Customizable Recorder shortcuts](/zh/blog/new-in-devtools-111/#recorder)
-* [Better syntax highlight for Angular](/zh/blog/new-in-devtools-111/#syntax)
-* [Reorganize caches in the Application panel](/zh/blog/new-in-devtools-111/#cache)
-* [Miscellaneous highlights](/zh/blog/new-in-devtools-111/#misc)
+* [Recorder updates](/zh/blog/new-in-devtools-112/#recorder)
+* [Recorder replay extensions](/zh/blog/new-in-devtools-112/#replay-extensions)
+* [Record with pierce selectors](/zh/blog/new-in-devtools-112/#pierce-selectors)
+* [Export recordings as Puppeteer scripts with Lighthouse analysis](/zh/blog/new-in-devtools-112/#puppeteer-lighthouse)
+* [Get extensions](/zh/blog/new-in-devtools-112/#get-extensions)
+* [Elements > Styles updates](/zh/blog/new-in-devtools-112/#elements-styles)
+* [CSS documentation in the Styles pane](/zh/blog/new-in-devtools-112/#css)
+* [CSS nesting support](/zh/blog/new-in-devtools-112/#nesting)
+* [Marking logpoints and conditional breakpoints in the Console](/zh/blog/new-in-devtools-112/#logpoint)
+* [Ignore irrelevant scripts during debugging](/zh/blog/new-in-devtools-112/#ignore-list)
+* [JavaScript Profiler deprecation started](/zh/blog/new-in-devtools-112/#js-profiler-deprecation)
+* [Emulate reduced contrast](/zh/blog/new-in-devtools-112/#reduced-contrast)
+* [Lighthouse 10](/zh/blog/new-in-devtools-112/#lighthouse)
+* [Miscellaneous highlights](/zh/blog/new-in-devtools-112/#misc)
  #}
 
+### Chrome 111 {: #chrome111 }
 
-{# ### Chrome 110 {: #chrome110 }
+* [使用样式面板调试高清颜色](/zh/blog/new-in-devtools-111/#color)
+* [增强断点的用户体验](/zh/blog/new-in-devtools-111/#breakpoint-redesign)
+* [可自定义的录音机快捷方式](/zh/blog/new-in-devtools-111/#recorder)
+* [Angular 更好的语法显示](/zh/blog/new-in-devtools-111/#syntax)
+* [在应用程序面板中重新组织缓存](/zh/blog/new-in-devtools-111/#cache)
+* [其他的更新](/zh/blog/new-in-devtools-111/#misc)
 
-* [Clearing Performance Panel on reload](/zh/blog/new-in-devtools-110/#perf)
-* [Recorder updates](/zh/blog/new-in-devtools-110/#recorder)
-* [View and highlight the code of your user flow in the Recorder](/zh/blog/new-in-devtools-110/#recorder-code)
-* [Customize selector types of a recording](/zh/blog/new-in-devtools-110/#recorder-selector)
-* [Edit user flow while recording](/zh/blog/new-in-devtools-110/#recorder-edit)
-* [Automatic in-place pretty print](/zh/blog/new-in-devtools-110/#pretty-print)
-* [Better syntax highlight and inline preview for Vue, SCSS and more](/zh/blog/new-in-devtools-110/#highlight)
-* [Ergonomic and consistent Autocomplete in the Console](/zh/blog/new-in-devtools-110/#console)
-* [Miscellaneous highlights](/zh/blog/new-in-devtools-110/#misc)
- #}
+
+### Chrome 110 {: #chrome110 }
+
+* [重载时清除性能面板] (/zh/blog/new-in-devtools-110/#perf)
+* [记录器更新](/zh/blog/new-in-devtools-110/#recorder)
+* [在记录器中查看并突出显示用户流的代码](/zh/blog/new-in-devtools-110/#recorder-code)
+* [自定义录音的选择器类型](/zh/blog/new-in-devtools-110/#recorder-selector)
+* [录音时编辑用户流程](/zh/blog/new-in-devtools-110/#recorder-edit)
+* [自动的代码美化器](/zh/blog/new-in-devtools-110/#pretty-print)
+* [为 Vue、SCSS 等提供更好的语法高亮和内联预览](/zh/blog/new-in-devtools-110/#highlight)
+* [控制台中符合人体工程学且一致的自动完成功能](/zh/blog/new-in-devtools-110/#console)
+* [其他的更新](/zh/blog/new-in-devtools-110/#misc)
 
 
 ### Chrome 109 {: #chrome109 }
