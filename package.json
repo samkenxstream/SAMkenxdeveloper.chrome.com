@@ -48,7 +48,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@google-cloud/appengine-admin": "2.1.2",
-    "@google-cloud/cloudbuild": "^2.6.0",
+    "@google-cloud/cloudbuild": "^3.8.0",
     "@google-cloud/error-reporting": "^2.0.4",
     "@google-cloud/storage": "^6.7.0",
     "@lhci/cli": "^0.7.2",
@@ -110,7 +110,7 @@
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
-    "@google-cloud/secret-manager": "^3.2.2",
+    "@google-cloud/secret-manager": "^4.2.2",
     "@percy/cli": "^1.16.0",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-json": "^4.1.0",
