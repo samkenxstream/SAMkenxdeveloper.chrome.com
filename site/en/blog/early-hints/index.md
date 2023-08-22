@@ -7,9 +7,10 @@ description: >
 subhead: >
   Find out how your server can send hints to the browser about critical sub-resources.
 date: 2022-06-23
-updated: 2023-05-23
+updated: 2023-08-02
 authors:
   - kenjibaheux
+  - tunetheweb
 tags:
   - css
 hero: 'image/kheDArv5csY6rvQUJDbWRscckLr1/GDoM9e3pHadjogCPqB4r.jpg'
@@ -49,7 +50,9 @@ In some cases, the performance improvement to the [Largest Contentful Paint](htt
 
 ## Implementing Early Hints
 
-Early Hints is available from Chrome version 103, as a response to navigation requests, or user interactions that change the url in the status bar, with support for both preconnect and preload hints.
+{% BrowserCompat 'http.status.103' %}
+
+Early Hints is available from Chrome version 103, as a response to navigation requests, or user interactions that change the url in the status bar, with support for both preconnect and preload hints. Other browsers are adding support for preconnect.
 
 Before going deep into the topic, please note that Early Hints are not useful if your server can send a 200 (or other final responses) right away. Instead, consider using the regular `link rel=preload` or `link rel=preconnect` on the main response ([Link rel HTTP header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Link)), or in the main response (`<link>` elements), in such situations. For the cases where your server needs a little time to generate the main response, read on!
 
@@ -150,7 +153,15 @@ Here is a quick summary of the level of support for Early Hints among popular OS
 If you are using one of the following CDNs or platforms, you may not need to manually implement Early Hints. Refer to your solution provider's online documentation to find out if it supports Early Hints, or refer to the non-exhaustive list here:
 
 - [Early Hints at Cloudflare](https://developers.cloudflare.com/cache/about/early-hints/)
-- [Early Hints at Fastly](https://www.google.com/url?q=https://www.fastly.com/blog/beyond-server-push-experimenting-with-the-103-early-hints-status-code%23:~:text%3Dabout%2520this%2520feature.-,Sending%2520103%2520Early%2520Hints,in%2520VCL%252C%2520like%2520this%253A&sa=D&source=docs&ust=1655290700718877&usg=AOvVaw07p23rkLcV4vplasZJBjEx).
+- [Early Hints at Fastly](https://www.fastly.com/blog/beyond-server-push-experimenting-with-the-103-early-hints-status-code#:~:text=about%20this%20feature.-,Sending%20103%20Early%20Hints,in%20VCL%2C%20like%20this%3A).
+
+## Avoiding issues for clients that do not support Early Hints
+
+Informational HTTP responses in the 100 range are part of the HTTP standard, but some older clients or bots may struggle with these because, prior to the launch of 103 Early Hints, they were rarely used for general web browsing.
+
+Only emitting 103 Early Hints in response to clients that send a `sec-fetch-mode: navigate` HTTP request header has should ensure such hints are only sent for newer clients that understand to wait for the subsequent response. Additionally, since Early Hints are only supported on navigation requests (see [current limitations](#current-limitations)), this has the added benefit of avoiding needlessly sending these on other requests.
+
+In addition, [Early Hints are recommended to only be sent over HTTP/2 or HTTP/3 connections](https://www.rfc-editor.org/rfc/rfc8297.html#section-3).
 
 ## Advanced pattern
 
