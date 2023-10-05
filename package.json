@@ -142,7 +142,7 @@
     "sass": "1.30.0",
     "sizeof": "^1.0.0",
     "stylelint": "^15.10.1",
-    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-sass-guidelines": "^10.0.0",
     "test-listen": "1.1.0",
     "tmp": "^0.2.1",
     "unified-lint-rule": "^1.0.6",
